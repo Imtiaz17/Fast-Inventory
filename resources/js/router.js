@@ -18,61 +18,35 @@ import LayoutLogin2 from './views/layouts/LayoutLogin2.vue'
 // import LayoutLogin3 from './views/layouts/LayoutLogin3.vue'
 import LayoutFront from './views/layouts/LayoutFront.vue'
 
-// Basic UI
-// import Buttons from './views/admin/basic-ui/Buttons.vue'
-// import Cards from './views/admin/basic-ui/Cards.vue'
-// import Typography from './views/admin/basic-ui/Typography.vue'
-// import Tables from './views/admin/basic-ui/Tables.vue'
-// import ProgressBar from './views/admin/basic-ui/ProgressBars.vue'
 
-// Components
-// import Notifications from './views/admin/components/Notifications.vue'
-// import SweetModals from './views/admin/components/SweetModals.vue'
-// import VueCarousel from './views/admin/components/VueCarousel.vue'
-// import VueDropzone from './views/admin/components/VueDropzone.vue'
-// import VueTable from './views/admin/components/VueTables.vue'
-// import VueTabs from './views/admin/components/VueTabs.vue'
-// import VueTooltips from './views/admin/components/VueTooltips.vue'
-// import VueCollapse from './views/admin/components/VueCollapse.vue'
+import categoryAdd from './views/Dashboard/Category/create'
+import categoryManage from './views/Dashboard/Category/manage'
 
-// Charts
-// import Chartjs from './views/admin/charts/Chartjs.vue'
-// import Gauges from './views/admin/charts/Gauge.vue'
+import supplierAdd from './views/Dashboard/Supplier/create'
+import supplierManage from './views/Dashboard/Supplier/manage'
 
-// // Icons
-// import Fontawesome from './views/admin/icons/Fontawesome.vue'
-// import Fpsline from './views/admin/icons/FpsLine.vue'
-// import IcoMoon from './views/admin/icons/IcoMoon.vue'
-// import Line from './views/admin/icons/Line.vue'
-// import Meteo from './views/admin/icons/Meteo.vue'
+import customerAdd from './views/Dashboard/Customer/create'
+import customerManage from './views/Dashboard/Customer/manage'
 
-// Forms
-// import General from './views/admin/forms/General.vue'
-// import Advanced from './views/admin/forms/Advanced.vue'
-// import Layouts from './views/admin/forms/FormLayouts.vue'
-// import VeeValidate from './views/admin/forms/VeeValidate.vue'
-// import Vuelidate from './views/admin/forms/Vuelidate.vue'
+import productAdd from './views/Dashboard/Product/create'
+import productManage from './views/Dashboard/Product/manage'
 
-// Gallery
-// import ImageGallery from './views/admin/gallery/ImageGallery.vue'
-// import VideoGallery from './views/admin/gallery/VideoGallery.vue'
+import purchaseAdd from './views/Dashboard/Purchase/create'
+import purchaseManage from './views/Dashboard/Purchase/manage'
 
-// // Apps
-// import TodosApp from './views/admin/apps/todos/TodosApp.vue'
-// import MailboxApp from './views/admin/apps/mailbox/MailboxApp.vue'
+import stockAdd from './views/Dashboard/Stock/create'
+import stockManage from './views/Dashboard/Stock/manage'
 
-// // Users
-// import Users from './views/admin/users/Users.vue'
-// import Profile from './views/admin/users/Profile.vue'
+import sellAdd from './views/Dashboard/Sell/create'
+import sellManage from './views/Dashboard/Sell/manage'
 
-// // Settings
-// import Settings from './views/admin/Settings.vue'
+import expenseAdd from './views/Dashboard/Expense/create'
+import expenseManage from './views/Dashboard/Expense/manage'
 
-/*
- |--------------------------------------------------------------------------
- | Other
- |--------------------------------------------------------------------------|
- */
+import staffAdd from './views/Dashboard/Staff/create'
+import staffManage from './views/Dashboard/Staff/manage'
+
+
 
 // Auth
 import Login from './views/auth/Login.vue'
@@ -91,23 +65,22 @@ import Home from './views/front/Home.vue'
 
 Vue.use(VueRouter)
 
-const routes = [ 
-   /*
-   |--------------------------------------------------------------------------
-   | Auth & Registration Routes
-   |--------------------------------------------------------------------------|
-   */
+const routes = [
+  /*
+  |--------------------------------------------------------------------------
+  | Auth & Registration Routes
+  |--------------------------------------------------------------------------|
+  */
   {
     path: '/',
     component: LayoutLogin2,
     redirect: '/login',
-    children: [
-      {
-        path: 'login',
-        component: Login,
-        name: 'login'
-      }]
-    },
+    children: [{
+      path: 'login',
+      component: Login,
+      name: 'login'
+    }]
+  },
 
   /*
    |--------------------------------------------------------------------------
@@ -124,7 +97,106 @@ const routes = [
         component: Basic,
         name: 'dashboard'
       },
-      // Basic UI
+      // Category
+      {
+        path: 'category/add',
+        component: categoryAdd,
+        name: 'categoryAdd'
+      },
+      {
+        path: 'category/manage',
+        component: categoryManage,
+        name: 'categoryManage'
+      },
+      // Supplier
+      {
+        path: 'supplier/add',
+        component: supplierAdd,
+        name: 'supplierAdd'
+      },
+      {
+        path: 'supplier/manage',
+        component: supplierManage,
+        name: 'supplierManage'
+      },
+      // Customer
+      {
+        path: 'customer/add',
+        component: customerAdd,
+        name: 'customerAdd'
+      },
+      {
+        path: 'customer/manage',
+        component: customerManage,
+        name: 'customerManage'
+      },
+      // Product
+      {
+        path: 'product/add',
+        component: productAdd,
+        name: 'productAdd'
+      },
+      {
+        path: 'product/manage',
+        component: productManage,
+        name: 'productManage'
+      },
+      // Purchase
+      {
+        path: 'purchase/add',
+        component: purchaseAdd,
+        name: 'purchaseAdd'
+      },
+      {
+        path: 'purchase/manage',
+        component: purchaseManage,
+        name: 'purchaseManage'
+      },
+      // Sell
+      {
+        path: 'sell/add',
+        component: sellAdd,
+        name: 'sellAdd'
+      },
+      {
+        path: 'sell/manage',
+        component: sellManage,
+        name: 'sellManage'
+      },
+      // Stock
+      {
+        path: 'stock/add',
+        component: stockAdd,
+        name: 'stockAdd'
+      },
+      {
+        path: 'stock/manage',
+        component: stockManage,
+        name: 'stockManage'
+      },
+      // Expense
+      {
+        path: 'expense/add',
+        component: expenseAdd,
+        name: 'expenseAdd'
+      },
+      {
+        path: 'expense/manage',
+        component: expenseManage,
+        name: 'expenseManage'
+      },
+      // Staff
+      {
+        path: 'staff/add',
+        component: staffAdd,
+        name: 'staffkAdd'
+      },
+      {
+        path: 'staff/manage',
+        component: staffManage,
+        name: 'staffManage'
+      },
+
     ]
   },
 
