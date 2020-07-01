@@ -103,7 +103,7 @@
               <i class="icon-fa icon-fa-minus-circle" />Expense
               <span class="icon-fa arrow icon-fa-fw" />
             </a>
-            <router-link to="/dashboard/expense">
+            <router-link to="/dashboard/expense/category">
               Expense Category
             </router-link>
             <router-link to="/dashboard/expense/add">

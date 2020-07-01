@@ -42,6 +42,7 @@ import sellManage from './views/Dashboard/Sell/manage'
 
 import expenseAdd from './views/Dashboard/Expense/create'
 import expenseManage from './views/Dashboard/Expense/manage'
+import expenseCat from './views/Dashboard/Expense/category'
 
 import staffAdd from './views/Dashboard/Staff/create'
 import staffManage from './views/Dashboard/Staff/manage'
@@ -179,6 +180,11 @@ const routes = [
         path: 'expense/add',
         component: expenseAdd,
         name: 'expenseAdd'
+      },
+      {
+        path: 'expense/category',
+        component: expenseCat,
+        name: 'expenseCat'
       },
       {
         path: 'expense/manage',

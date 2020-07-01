@@ -20,23 +20,13 @@
               <div class="form-group row">
                 <label for="inputEmail1" class="col-sm-2 col-form-label">Email</label>
                 <div class="col-sm-10">
-                  <input
-                    id="inputEmail1"
-                    type="email"
-                    class="form-control"
-                    placeholder="Email"
-                  >
+                  <input id="inputEmail1" type="email" class="form-control" placeholder="Email">
                 </div>
               </div>
               <div class="form-group row">
                 <label for="inputPassword1" class="col-sm-2 col-form-label">Password</label>
                 <div class="col-sm-10">
-                  <input
-                    id="inputPassword1"
-                    type="password"
-                    class="form-control"
-                    placeholder="Password"
-                  >
+                  <input id="inputPassword1" type="password" class="form-control" placeholder="Password">
                 </div>
               </div>
             </form>
@@ -44,12 +34,7 @@
             <form>
               <div class="form-group">
                 <label for="exampleFormControlInput1">Email address</label>
-                <input
-                  id="exampleFormControlInput1"
-                  type="email"
-                  class="form-control"
-                  placeholder="name@example.com"
-                >
+                <input id="exampleFormControlInput1" type="email" class="form-control" placeholder="name@example.com">
               </div>
               <div class="form-group">
                 <label for="exampleFormControlSelect1">Example select</label>
@@ -63,11 +48,7 @@
               </div>
               <div class="form-group">
                 <label for="exampleFormControlSelect2">Example multiple select</label>
-                <select
-                  id="exampleFormControlSelect2"
-                  multiple
-                  class="form-control"
-                >
+                <select id="exampleFormControlSelect2" multiple class="form-control">
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -77,12 +58,8 @@
               </div>
               <div class="form-group">
                 <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea
-                  id="exampleFormControlTextarea1"
-                  class="form-control"
-                  rows="3"
-                />
-              </div>
+                <textarea id="exampleFormControlTextarea1" class="form-control" rows="3" />
+                </div>
               <div class="form-group">
                 <label for="exampleFormControlFile1">Example file input</label>
                 <input

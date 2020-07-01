@@ -1,0 +1,22 @@
+.page-header
+{
+	margin-bottom: 0px;
+}
+.label
+{
+	font-weight: 600;
+}
+.mt-75
+{
+	margin-top: 75px !important;
+}
+.table-bordered {
+    border: 1px solid #ddd !important;
+}
+.table th
+{
+white-space: inherit !important;
+}
+.card-body .table {
+     margin-top: 0px !important; 
+}

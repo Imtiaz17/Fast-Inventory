@@ -1,37 +1,56 @@
 <template>
-      <div class="main-content buttons-demo">
+  <div class="main-content">
     <div class="page-header">
-      <h3 class="page-title">Buttons</h3>
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item"><a href="#">Basic UI</a></li>
-        <li class="breadcrumb-item active">Buttons</li>
-      </ol>
+      <h3 class="page-title">Add Categories</h3>
     </div>
-</div>
+    <div class="row justify-content-md-center">
+      <div class="col-sm-8">
+        <div class="card">
+          <div class="card-header">
+            <h6>Add Category</h6>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group row">
+                <label for="inputEmail1" class="col-sm-2 col-form-label">Category</label>
+                <div class="col-sm-6">
+                  <input id="inputEmail1" type="text" class="form-control" placeholder="name of category">
+                </div>
+                <div class="col-sm-4">
+                  <button class="btn btn-primary">
+                    Save
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 <script>
 export default {
-    data() {
-        return {
-
-        }
-    },
-    computed: {
-
-    },
-    created() {
-
-    },
-    mounted() {
-
-    },
-    methods: {
-
-    },
-    watch: {
+  data() {
+    return {
 
     }
+  },
+  computed: {
+
+  },
+  created() {
+
+  },
+  mounted() {
+
+  },
+  methods: {
+
+  },
+  watch: {
+
+  }
 };
 
 </script>
